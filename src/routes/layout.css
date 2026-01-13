@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Reset and base styles */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+	background: rgba(232, 213, 183, 0.3);
+	color: inherit;
+}
